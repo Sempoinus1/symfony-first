@@ -1,0 +1,15 @@
+{% extends '../base.html.twig' %}
+
+{% block container %}
+    <div class="text-center mt-5">
+        <form method="post">
+            <h1 class="h3 mb-3 font-weight-normal">Please register your account.</h1>
+            <h2 class="font-weight-normal h6">If you already have account <a href="/Login">click here.</a></h2>
+            <label for="inputEmail">Email</label>
+            <input type="email" name="email" id="inputEmail" class="form-control" required>
+            <label for="inputPassword">Password</label>
+            <input type="password" name="password" id="inputPassword" class="form-control" required>
+            <input type="submit" value="Register" class="btn btn-lg btn-dark mt-2">
+        </form>
+    </div>
+{% endblock %}

@@ -1,6 +1,12 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
-random_number:
-  path: /random/number
-  controller: App\Controller\RandomController::number
+index:
+  path: /
+  controller: App\Controller\IndexController::init
+Login:
+  path: /Login
+  controller: App\Controller\AuthController::login
+Register:
+  path: /Register
+  controller: App\Controller\RegistrationController::register
